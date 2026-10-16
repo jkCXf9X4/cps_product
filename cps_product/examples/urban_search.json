@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "name": "urban_search",
+  "forces": {
+    "hunters": [
+      {
+        "name": "hunter_gamma",
+        "kinematics": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "velocity": {
+            "x": 0.5,
+            "y": 0.0
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      }
+    ],
+    "moving_targets": [
+      {
+        "name": "target_m1",
+        "kinematics": {
+          "position": {
+            "x": 3.0,
+            "y": 4.0
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.2
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      }
+    ],
+    "static_targets": [
+      {
+        "name": "target_s1",
+        "kinematics": {
+          "position": {
+            "x": 1.0,
+            "y": 2.0
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      },
+      {
+        "name": "target_s2",
+        "kinematics": {
+          "position": {
+            "x": 4.0,
+            "y": 1.0
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "environment": {
+    "area": 2500.0,
+    "duration": 1800.0
+  },
+  "mission_goals": [
+    "locate",
+    "verify"
+  ]
+}

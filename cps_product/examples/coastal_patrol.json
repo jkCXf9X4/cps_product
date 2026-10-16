@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "name": "coastal_patrol",
+  "forces": {
+    "hunters": [
+      {
+        "name": "hunter_alpha",
+        "kinematics": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "velocity": {
+            "x": 1.0,
+            "y": 0.0
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      },
+      {
+        "name": "hunter_beta",
+        "kinematics": {
+          "position": {
+            "x": 10.0,
+            "y": 0.0
+          },
+          "velocity": {
+            "x": -0.5,
+            "y": 0.2
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      }
+    ],
+    "moving_targets": [
+      {
+        "name": "target_m1",
+        "kinematics": {
+          "position": {
+            "x": 5.0,
+            "y": 5.0
+          },
+          "velocity": {
+            "x": 0.3,
+            "y": -0.1
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      },
+      {
+        "name": "target_m2",
+        "kinematics": {
+          "position": {
+            "x": 8.0,
+            "y": 2.0
+          },
+          "velocity": {
+            "x": -0.2,
+            "y": 0.4
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      }
+    ],
+    "static_targets": [
+      {
+        "name": "target_s1",
+        "kinematics": {
+          "position": {
+            "x": 12.0,
+            "y": 1.0
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "acceleration": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "environment": {
+    "area": 10000.0,
+    "duration": 3600.0
+  },
+  "mission_goals": [
+    "detect",
+    "track",
+    "report"
+  ]
+}
